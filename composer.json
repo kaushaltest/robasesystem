@@ -1,0 +1,19 @@
+{
+    "name": "kaushal/rolebasesystem",
+    "description": "This will use for create your app with rolebase system",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "kaushaltest",
+            "email": "kaushaltest4346@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Role\\rolebase\\": "src/"
+        }
+    }
+}
