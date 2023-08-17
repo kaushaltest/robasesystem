@@ -13,13 +13,13 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Role\\rolebase\\": "src/"
+            "role\\rolebasesystem\\": "src/"
         }
     },
     "extra": {
         "laravel":{
             "providers":[
-                "Role\\rolebasesystem\\RolebaseServiceProvider"
+                "role\\rolebasesystem\\RolebaseServiceProvider"
             ]
         }
     }
