@@ -15,5 +15,12 @@
         "psr-4": {
             "Role\\rolebase\\": "src/"
         }
+    },
+    "extra": {
+        "laravel":{
+            "providers":[
+                "role\\rolebasesystem\\RolebaseServiceProvider"
+            ]
+        }
     }
 }
