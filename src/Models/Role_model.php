@@ -1,6 +1,6 @@
 <?php
 
-namespace Role\Rolebasesystem\Models;
+namespace role\rolebasesystem\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
