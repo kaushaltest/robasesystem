@@ -19,7 +19,7 @@
     "extra": {
         "laravel":{
             "providers":[
-                "role\\rolebasesystem\\RolebaseServiceProvider"
+                "Role\\rolebasesystem\\RolebaseServiceProvider"
             ]
         }
     }
