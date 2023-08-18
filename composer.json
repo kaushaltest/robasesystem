@@ -2,6 +2,7 @@
     "name": "role/rolebasesystem",
     "description": "This will use for create your app with rolebase system",
     "type": "library",
+    "version": "1.0.0",
     "license": "MIT",
     "authors": [
         {
