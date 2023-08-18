@@ -27,7 +27,7 @@ class Permission_modal extends Model
 
     public function getPermission()
     {
-        return Permission_modal::select('permissions.id as permission_id', 'permissions.permission', 'permission_group.id as permission_group_id', 'permission_group.permission_group')
+        return Permission_modal::select('permissions.id as permission_id', 'permissions.permission', 'permission_group.id as permission_group_id', 'permission_group.permission_group', 'permissions.slug')
             ->from("permissions")
             ->leftjoin("permission_group", "permission_group.id", "=", "permissions.permission_group_id")
             ->get();

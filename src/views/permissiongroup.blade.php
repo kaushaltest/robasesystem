@@ -1,32 +1,11 @@
-<html>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<meta name="csrf-token" content="{{ csrf_token() }}" />
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
-<link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet" />
-</head>
-
-<body>
-    <div class="content-wrapper">
-        <div class="content-header">
-            <div class="container-fluid">
-                <div class="row mb-2">
-                    <div class="col-sm-6">
-                        <h1 class="m-0">Permission group </h1>
-                    </div>
-                </div>
-            </div>
-        </div>
+<x-rolebasesystem::header />
         <section class="content">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 mt-2">
                         <div class="card">
                             <div class="card-header">
-                                <h3 class="card-title">Permission group List</h3>
+                                <h3 class="card-title">Permission group</h3>
                             </div>
                             <div class="card-body">
                                 <div class="row">
@@ -55,9 +34,7 @@
                 </div>
             </div>
         </section>
-    </div>
-    </div>
-
+  
     <!-- //add & edit permission group model -->
     <div class="modal fade" id="modal_add_edit_permission_group">
         <div class="modal-dialog">
@@ -107,10 +84,7 @@
         </div>
         <!-- /.modal-dialog -->
     </div>
-    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <x-rolebasesystem::footer />
     <script>
         $(function() {
             var table = $('#tbl_permissiongroup').DataTable({
@@ -140,7 +114,7 @@
                 ],
                 "createdRow": function(row, data, index) {
                     $('td', row).eq(1).html(
-                        '<button type="button" name="btn_edit" data-id="2" id="btn_edit" class="btn btn-warning btn_action"><i class="fa fa-edit"></i></button><button type="button" name="btn_delete" id="btn_delete" class="btn btn-danger" data-id="' +
+                        '<button type="button" name="btn_edit" data-id="2" id="btn_edit" class="btn btn-warning btn_action"><i class="fa fa-edit"></i></button><button type="button" name="btn_delete" id="btn_delete" class="btn btn-danger ml-2" data-id="' +
                         data['permission_group_id'] + '"><i class="fa fa-trash"></i></button>');
                 },
 
