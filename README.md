@@ -75,7 +75,7 @@ php artisan migrate
     Route::post('/savepermission', [Permissionofroles::class, "savePermission"]);
 ```
 
-## Routes 
+## Run 
 
 - If all done then run this command:
 ```bash
