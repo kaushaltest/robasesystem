@@ -6,6 +6,10 @@
 
 The Role-Based System Laravel Package provides a robust and flexible role management solution for Laravel applications. Easily implement and manage user roles, permissions, and access control with this package.
 
+## Indexing
+1.[Features](#features)
+
+
 ## Features
 
 - Define and manage user roles with associated permissions.
@@ -27,7 +31,7 @@ composer require role/rolebasesystem
 - After you install package you have to migrate tables. 
 - You must check first you env file have DB connection ? if no then first connect you DB. 
 - Your DB connection is success then hit this command:
-- If migration command successfully run then your DB show four tables permissions, permission_group, role, role_permissions.
+- Migration command successfully run then your DB show four tables permissions, permission_group, role, role_permissions.
 
 ```bash
 php artisan migrate
@@ -36,16 +40,16 @@ php artisan migrate
 ## Publish 
 
 - After migration complete we will publish package. 
-- If successfully publish then your view folder store some package view files ('vendor/rolebasesystem/').
-- In your controller store package controller inside (role/rolebasesystem/).
-- In your controller store package model inside (role/rolebasesystem/).
-- If you want to change some inbuild package view,controller,model you can able to change its after publish.
+- View folder store some package view files ('vendor/rolebasesystem/').
+- Controller store package controller inside (role/rolebasesystem/).
+- Model store package model inside (role/rolebasesystem/).
+- Able change package view,controller,model.
 ```bash
  php artisan vendor:publish --tag=rolebasesystem
 ```
 ## Routes 
 
-- This all are route use in this package 
+- route use in this package 
 ```bash
  //role 
     Route::view('/role', 'rolebasesystem::role');
@@ -77,9 +81,8 @@ php artisan migrate
 
 ## Run 
 
-- If all done then run this command:
+-run this command:
 ```bash
 php artisan serve 
 ```
 - Hit this url 'http://127.0.0.1:8000/role'
-- if all are successfully done then show role page.
