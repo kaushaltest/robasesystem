@@ -7,7 +7,12 @@
 The Role-Based System Laravel Package provides a robust and flexible role management solution for Laravel applications. Easily implement and manage user roles, permissions, and access control with this package.
 
 ## Indexing
-1.[Features](#features)
+1. [Features](#features)
+2. [Installation](#installation)
+3. [Migration](#migration)
+4. [Publish](#publish)
+5. [Routes](#routes)
+6. [Run](#run)
 
 
 ## Features
