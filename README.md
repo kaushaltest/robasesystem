@@ -21,3 +21,12 @@ You can install the package via composer:
 
 ```bash
 composer require role/rolebasesystem
+
+## Migration
+
+- After you install package you have to migrate tables. 
+- You must check first you env file have DB connection ? if no then first connect you DB. 
+- Your DB connection is success then hit this command:
+
+```bash
+php artisan migrate
