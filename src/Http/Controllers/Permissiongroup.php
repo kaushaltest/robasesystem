@@ -1,9 +1,9 @@
 <?php
 
-namespace role\rolebasesystem\Http\Controllers;
+namespace App\Http\Controllers\role\rolebasesystem;
 
 use Illuminate\Http\Request;
-use role\rolebasesystem\Models\Permission_group_modal;
+use App\Models\role\rolebasesystem\Permission_group_modal;
 use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
 use Illuminate\Support\Str;

@@ -1,6 +1,6 @@
 <?php
 
-namespace role\rolebasesystem\Models;
+namespace App\Models\role\rolebasesystem;
 
 use App\Http\Controllers\Permissiongroup;
 use Illuminate\Database\Eloquent\Factories\HasFactory;

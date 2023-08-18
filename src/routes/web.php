@@ -1,10 +1,10 @@
 <?php
-use role\rolebasesystem\Http\Controllers\Role;
-use role\rolebasesystem\Http\Controllers\Permission;
-use role\rolebasesystem\Http\Controllers\Permissiongroup;
-use role\rolebasesystem\Http\Controllers\Permissionofroles;
+use App\Http\Controllers\role\rolebasesystem\Role;
+use App\Http\Controllers\role\rolebasesystem\Permission;
+use App\Http\Controllers\role\rolebasesystem\Permissiongroup;
+use App\Http\Controllers\role\rolebasesystem\Permissionofroles;
 
-Route::group(['middleware' => 'web', 'namespace' => 'role\rolebasesystem\Http\Controllers'], function () {
+Route::group(['middleware' => 'web'], function () {
     //role 
     Route::view('/role', 'rolebasesystem::role');
     Route::get('/getrole', [Role::class, "getRole"]);
