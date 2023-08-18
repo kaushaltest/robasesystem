@@ -21,7 +21,7 @@ You can install the package via composer:
 
 ```bash
 composer require role/rolebasesystem
-
+```
 ## Migration
 
 - After you install package you have to migrate tables. 
@@ -30,3 +30,4 @@ composer require role/rolebasesystem
 
 ```bash
 php artisan migrate
+```
